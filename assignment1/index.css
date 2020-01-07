@@ -1,0 +1,159 @@
+/**
+ * Standard formatting
+ */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+/**
+ * ----------
+ */
+
+/* NAVBAR */
+nav {
+    background-color: black;
+    margin: 0;
+    width: 100%;
+    padding: 25px;
+}
+
+nav ul li {
+    display: inline-block;
+    color: white;
+    font-family: Arial;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul li a:hover,
+nav ul li a:visited {
+    color: #e3e3e3;
+}
+
+nav ul li a:active {
+    text-decoration: line-through;
+}
+
+/* NAVBAR END */
+
+/* BANNER */
+section#banner {
+    height: 500px;
+    width: 100%;
+    background-color: rgba(0, 166, 255, 1);
+}
+
+section#banner > h1 {
+    font-size: 140px;
+    color: rgba(255, 255, 255, 0.2);
+
+    float: left;
+    margin-top: 180px; /* half of banner height minus half of font size */
+    margin-left: 40px;
+}
+
+section#banner > a {
+    color: white;
+    font-size: 28px;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 14px;
+
+    float: right;
+    margin-top: 219px;
+    margin-right: 150px;
+}
+
+section#banner > a:hover {
+    background: white;
+    color: rgba(0, 166, 255, 1);
+}
+/* BANNER END */
+
+/* BRANDS */
+section#brands {
+    margin-top: 30px;
+    text-align: center;
+}
+
+section#brands table {
+    margin: 0 auto;
+}
+
+section#brands table tr td {
+    text-align: center;
+    padding: 15px;
+}
+
+section#brands table tr td:hover {
+    cursor: pointer;
+}
+
+section#brands table tr td:hover a {
+    text-decoration: underline;
+}
+
+section#brands table tr td img {
+    height: 160px;
+    width: 160px;
+}
+
+section#brands table tr td a {
+    font-size: 18px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* BRANDS END */
+
+/* TOP PRODUCTS */
+section#top_products {
+    margin-top: 60px;
+    text-align: center;
+}
+
+section#top_products h2 {
+    margin-bottom: 10px;
+}
+
+section#top_products table {
+    border-spacing: 0;
+    border: 1px solid #9ca6b0;
+    margin: 0 auto;
+}
+
+section#top_products table tr {
+}
+
+section#top_products td,
+section#top_products th {
+    border: 1px solid #9ca6b0;
+    padding: 7px;
+    font-size: 18px;
+    width: 120px;
+}
+
+section#top_products table img {
+    height: 75px;
+    width: 75px;
+}
+
+section#top_products td:nth-of-type(2) {
+    font-weight: bold;
+}
+
+/* TOP PRODUCTS END */
