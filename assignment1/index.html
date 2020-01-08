@@ -90,6 +90,38 @@
                     <td>6.5</td>
                 </tr>
             </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="5">Add a new product</td>
+                </tr>
+
+                <form method="post" action="https://wt.ops.labs.vu.nl/api20/78c5681b">
+                    <tr>
+                        <td>
+                            <input type="text" name="image" placeholder="Image URL..">
+                        </td>
+                        <td>
+                            <input type="text" name="model" placeholder="Model..">
+                        </td>
+                        <td>
+                            <input type="text" name="brand" placeholder="Brand..">
+                        </td>
+                        <td>
+                            <input type="text" name="os" placeholder="Operating System..">
+                        </td>
+                        <td>
+                            <input type="number" name="screensize" placeholder="Screen Size..">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5">
+                            <button type="submit">Add</button>
+                        </td>
+                    </tr>
+                </form>
+            </tfoot>
         </table>
     </section>
 

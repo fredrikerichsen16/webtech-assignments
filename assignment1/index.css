@@ -23,7 +23,7 @@ a {
 nav {
     background-color: black;
     margin: 0;
-    width: 100%;
+    width: calc(100% - 50px);
     padding: 25px;
 }
 
@@ -155,5 +155,24 @@ section#top_products table img {
 section#top_products td:nth-of-type(2) {
     font-weight: bold;
 }
+
+section#top_products tfoot button {
+    padding: 12px 25px;
+    background-color: rgba(0, 166, 255, 1);
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 0;
+}
+
+    section#top_products tfoot button:hover {
+        cursor: pointer;
+        background-color: rgba(0, 159, 245, 1);
+    }
+
+    section#top_products tfoot button:active {
+        border: 2px solid rgba(0, 159, 245, 1);
+        border-left: 0; border-top: 0;
+    }
 
 /* TOP PRODUCTS END */
