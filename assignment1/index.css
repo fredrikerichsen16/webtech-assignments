@@ -112,6 +112,13 @@ section#brands table tr td img {
     width: 160px;
 }
 
+section#OSDescriptions dt {
+font-weight: bold;
+text-align: center;
+}
+section#OSDescriptions dl {
+  text-align: center;
+}
 section#brands table tr td a {
     font-size: 18px;
     margin-top: 5px;
