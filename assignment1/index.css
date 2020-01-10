@@ -55,6 +55,7 @@ section#banner {
     height: 500px;
     width: 100%;
     background-color: rgba(0, 166, 255, 1);
+    position: relative;
 }
 
 section#banner > h1 {
@@ -128,6 +129,7 @@ section#top_products table {
     border-spacing: 0;
     border: 1px solid #9ca6b0;
     margin: 0 auto;
+    border-spacing: 2px;
 }
 
 section#top_products table tr {
@@ -187,3 +189,40 @@ section#brands table tr td a {
     display: block;
 }
 /* OS DESCRIPTIONS END */
+
+
+
+
+/**
+ * RESPONSIVE
+ */
+
+@media (max-width: 1550px) {
+    section#banner > h1 {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 1300px) {
+    section#banner > a {
+        float: none;
+        margin: 0;
+        bottom: 60px;
+        left: 40px;
+        position: absolute;
+    }
+}
+
+@media (max-width: 900px) {
+    section#banner > h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    section#banner > h1 {
+        font-size: 50px;
+    }
+}
+
+/* RESPONSIVE END */
