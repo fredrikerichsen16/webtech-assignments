@@ -174,12 +174,26 @@ section#top_products tfoot button {
 
 
 /* OS DESCRIPTIONS */
+
+section#OSDescriptions {
+  text-align: center;
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+}
+section#OSDescriptions ol {
+  width: 500px;
+  display: inline-block;
+}
 section#OSDescriptions dt {
 font-weight: bold;
-text-align: center;
+
 }
 section#OSDescriptions dl {
+  display: inline-block;
   text-align: center;
+  width: 500px;
+  float: left;
 }
 section#brands table tr td a {
     font-size: 18px;
