@@ -112,19 +112,6 @@ section#brands table tr td img {
     width: 160px;
 }
 
-section#OSDescriptions dt {
-font-weight: bold;
-text-align: center;
-}
-section#OSDescriptions dl {
-  text-align: center;
-}
-section#brands table tr td a {
-    font-size: 18px;
-    margin-top: 5px;
-    display: block;
-}
-
 /* BRANDS END */
 
 /* TOP PRODUCTS */
@@ -184,3 +171,19 @@ section#top_products tfoot button {
     }
 
 /* TOP PRODUCTS END */
+
+
+/* OS DESCRIPTIONS */
+section#OSDescriptions dt {
+font-weight: bold;
+text-align: center;
+}
+section#OSDescriptions dl {
+  text-align: center;
+}
+section#brands table tr td a {
+    font-size: 18px;
+    margin-top: 5px;
+    display: block;
+}
+/* OS DESCRIPTIONS END */
