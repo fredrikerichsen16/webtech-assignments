@@ -56,6 +56,7 @@ section#banner {
     width: 100%;
     background-color: rgba(0, 166, 255, 1);
     position: relative;
+    page-break-after: always;
 }
 
 section#banner > h1 {
@@ -117,7 +118,6 @@ section#brands table tr td img {
 
 /* TOP PRODUCTS */
 section#top_products {
-    page-break-before: always;
     margin-top: 60px;
     text-align: center;
 }
@@ -202,6 +202,8 @@ section#OSDescriptions {
   margin-top: 40px;
   margin-left: 50%;
   transform: translateX(-50%);
+
+  page-break-before: always;
 }
 section#OSDescriptions ol {
   width: 300px;
@@ -212,11 +214,13 @@ section#OSDescriptions ol li {
     list-style-position: inside;
 }
 section#OSDescriptions dt {
-font-weight: bold;
+    font-weight: bold;
+    widows: 2;
 }
 
 section#OSDescriptions dt {
     text-indent: 10px;
+    orphans: 2;
 }
 
 section#OSDescriptions figure {

@@ -264,6 +264,10 @@ section#brands table tr td a {
         left: 40px;
         position: absolute;
     }
+
+    section#OSDescriptions ol li {
+        list-style-image: url('https://img.icons8.com/ios/2x/check-all.png');
+    }
 }
 
 @media (max-width: 900px) {
