@@ -193,6 +193,8 @@ section#top_products tfoot button {
 div#descriptions {
   float: left;
   display: inline-block;
+
+  display: block;
 }
 section#OSDescriptions {
   text-align: center;
