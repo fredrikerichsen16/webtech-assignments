@@ -53,16 +53,16 @@
 
     <section id="top_products">
         <form method="post" action="https://wt.ops.labs.vu.nl/api20/78c5681b">
-            <table>
+            <table class="sortable">
                 <caption>Top Products</caption>
 
                 <thead>
                     <tr>
-                        <th>Image</th>
-                        <th>Model</th>
-                        <th>Brand</th>
-                        <th>Operating System</th>
-                        <th>Screen Size</th>
+                        <th data-column="image">Image</th>
+                        <th data-column="model">Model</th>
+                        <th data-column="brand">Brand</th>
+                        <th data-column="os">Operating System</th>
+                        <th data-column="screensize">Screen Size</th>
                     </tr>
                 </thead>
 
@@ -168,3 +168,6 @@
     </section>
 </body>
 </html>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
