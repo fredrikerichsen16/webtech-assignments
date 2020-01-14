@@ -52,7 +52,7 @@ nav ul li a:active {
 
 /* BANNER */
 section#banner {
-    height: 500px;
+    height: 300px;
     width: 100%;
     background-color: rgba(0, 166, 255, 1);
     position: relative;
@@ -63,7 +63,7 @@ section#banner > h1 {
     color: rgba(255, 255, 255, 0.2);
 
     float: left;
-    margin-top: 180px; /* half of banner height minus half of font size */
+    margin-top: 140px; /* half of banner height minus half of font size */
     margin-left: 40px;
 }
 
@@ -75,7 +75,7 @@ section#banner > a {
     padding: 14px;
 
     float: right;
-    margin-top: 219px;
+    margin-top: 180px;
     margin-right: 150px;
 }
 
