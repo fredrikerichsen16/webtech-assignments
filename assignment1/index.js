@@ -27,3 +27,9 @@ $('table.sortable th').on('click', function() {
 
     // console.log($rows);
 });
+$(document).ready(function(){
+  $(".reset").click(function(){
+    $.get("https://wt.ops.labs.vu.nl/api20/78c5681b/reset", function(){
+    });
+  });
+});
