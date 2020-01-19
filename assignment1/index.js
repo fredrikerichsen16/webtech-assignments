@@ -44,15 +44,24 @@ $('form.add-phone-form').on('submit', function(e) {
         data: data,
         // dataType: 'json',
         // contentType: 'application/json',
-        success: function(data) {
-            console.log(data.URI);
+        success: function() {
+            addRow({ brand: $("input[name='brand']").val(),
+                     model: $("input[name='model']").val(),
+                     os: $("input[name='os']").val(),
+                     screensize: $("input[name='screensize']").val(),
+                     image: $("input[name='image']").val() });
+
+            $('form.add-phone-form input').val('');
         }
     });
 });
 
-$(".reset").click(function() {
-    $.get("https://wt.ops.labs.vu.nl/api20/78c5681b/reset", function() {
+$("button.reset").on('click', function(e) {
+    e.preventDefault();
 
+    $.get("https://wt.ops.labs.vu.nl/api20/78c5681b/reset", function() {
+        document.getElementById("bodyTable").innerHTML = '';
+        getData();
     });
 });
 
@@ -63,11 +72,9 @@ function addRow(obj) {
 
 function getData() {
     $.get("https://wt.ops.labs.vu.nl/api20/78c5681b", function(data) {
-        console.log(data);
         for (i = 0; i < data.length; i++) {
             addRow(data[i]);
         }
-        console.log(document.getElementById("bodyTable").innerHTML);
     }, "json");
 }
 
