@@ -64,8 +64,8 @@ $("button.reset").on('click', function(e) {
 });
 
 function addRow(obj) {
-    var table = "<tr><td><img src=" + obj.image + "></td> <td>" + obj.brand + "</td> <td>" + obj.model + "</td> <td>" + obj.os + "</td> <td>" + obj.screensize + "</td></tr>";
-    document.getElementById("bodyTable").innerHTML += table;
+    let row = "<tr><td><img src=" + obj.image + "></td> <td>" + obj.brand + "</td> <td>" + obj.model + "</td> <td>" + obj.os + "</td> <td>" + obj.screensize + "</td></tr>";
+    document.getElementById("bodyTable").innerHTML += row;
 }
 
 function getData() {
