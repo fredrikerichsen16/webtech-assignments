@@ -27,6 +27,33 @@ $('table.sortable th').on('click', function() {
 
     // console.log($rows);
 });
+
+// get all: https://wt.ops.labs.vu.nl/api20/78c5681b
+//
+
+$('form.add-phone-form').on('submit', function(e) {
+    e.preventDefault();
+
+    let data = $(this).serializeArray();
+
+    console.log(data);
+
+    $.post({
+        url: 'https://wt.ops.labs.vu.nl/api20/78c5681b',
+        type: 'post',
+        data: data,
+        // dataType: 'json',
+        // contentType: 'application/json',
+        success: function(data) {
+            console.log(data.URI);
+        }
+    });
+});
+
+
+
+
+
 $(document).ready(function(){
   $(".reset").click(function(){
     $.get("https://wt.ops.labs.vu.nl/api20/78c5681b/reset", function(){
