@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documentation</title>
+</head>
+<body>
+    <h1>Documentation</h1>
+
+    <h3>Get all</h3>
+    <p>Get all phones from database</p>
+    <ul>
+        <li>URL: "/get"</li>
+        <li>HTTP Method(s): GET</li>
+        <li>Success: in the event of a succesful request the response is JSON data in the following format with a status code of 200 (example): <br>
+            <pre>
+            [{
+                "id": 1,
+                "brand": "Apple",
+                "model": "iPhone 8",
+                "os": "iOS",
+                "screensize": 6.5,
+                "image": "someurl.jpg"
+            }, ...]
+            </pre>
+        </li>
+        <li>Error: in the event of an unsuccesful request the response is JSON data with the error object returned by sqlite with a status code of 500 (internal server error).</li>
+        <li>Input: no url query or post data is accepted.</li>
+    </ul>
+
+    <h3>Get one</h3>
+    <p>Get one phone from database by id</p>
+    <ul>
+        <li>URL: "/get/:id"</li>
+        <li>HTTP Method(s): GET</li>
+        <li>Success: in the event of a succesful request the response is JSON data in the following format with a status code of 200 (example): <br>
+            <pre>
+            {
+                "id": 1,
+                "brand": "Apple",
+                "model": "iPhone 8",
+                "os": "iOS",
+                "screensize": 6.5,
+                "image": "someurl.jpg"
+            }
+            </pre>
+        </li>
+        <li>Error: in the event of an unsuccesful request the response is JSON data with the error object returned by sqlite with a status code of 500 (internal server error).</li>
+        <li>Input: The url query parameter "id" is required. See URL above for where to place it.</li>
+    </ul>
+
+    <h3>Update</h3>
+    <p>Update one phone in the database</p>
+    <ul>
+        <li>URL: "/update"</li>
+        <li>HTTP Method(s): PATCH</li>
+        <li>Success: in the event of a succesful request the response is JSON data in the following format with a status code of 200 (example): <br>
+            <pre>
+            { 
+                success: true, 
+                message: "Succesful update on phone with id 1"
+            }
+            </pre>
+        </li>
+        <li>Error: in the event of an unsuccesful request the response is JSON data with the error object returned by sqlite with a status code of 500 (internal server error).</li>
+        <li>Input: No url query parameter is expected. Post data is expected. "id" is required to indicate which phone to update, as well as any of the column names and the new value to update with. I.e. "brand", "model", "os", "screensize" and "image".</li>
+    </ul>
+    
+    <h3>Delete</h3>
+    <p>Delete one phone in the database</p>
+    <ul>
+        <li>URL: "/delete/:id"</li>
+        <li>HTTP Method(s): DELETE</li>
+        <li>Success: in the event of a succesful request the response is JSON data in the following format with a status code of 200 (example): <br>
+            <pre>
+            { 
+                success: true, 
+                message: "Succesfully deleted phone with id 1"
+            }
+            </pre>
+        </li>
+        <li>Error: in the event of an unsuccesful request the response is JSON data with the error object returned by sqlite with a status code of 500 (internal server error).</li>
+        <li>Input: The url query parameter "id" is required. See URL above for where to place it.</li>
+    </ul>
+    
+    <h3>Create</h3>
+    <p>Create and add one phone to the database</p>
+    <ul>
+        <li>URL: "/create"</li>
+        <li>HTTP Method(s): POST</li>
+        <li>Success: in the event of a succesful request the response is JSON data in the following format with a status code of 200 (example): <br>
+            <pre>
+            { 
+                success: true, 
+                message: "Added phone"
+            }
+            </pre>
+        </li>
+        <li>Error: in the event of an unsuccesful request the response is JSON data with the error object returned by sqlite with a status code of 500 (internal server error).</li>
+        <li>Input: No url query parameter is expected. Post data is expected - an object with the following required keys and a value of type: "brand" - string, "model" - string, "os" - string, "screensize" - number, and "image" - string.</li>
+    </ul>
+    
+</body>
+</html>

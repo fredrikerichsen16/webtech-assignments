@@ -52,13 +52,13 @@ app.patch("/update", function(req, res) {
         UPDATE phones
         SET ${set}
         WHERE id = ${id}
-    `, setValues, function(err, data) {
+    `, setValues, function(err) {
         if(err) {
             res.status(500);
             res.json(err);
         }
 
-    	return res.json(data);
+        return res.json({success: true, message: 'Succesful update on phone with id ' + id});
     });
 });
 
@@ -66,7 +66,10 @@ app.delete('/delete/:id', function(req, res) {
     let id = req.params.id;
 
     db.run('DELETE FROM phones WHERE id = ?', [id], function(err, data) {
-        res.json({data: data, err: err});
+        res.json({ 
+            success: true, 
+            message: "Succesfully deleted phone with id " + id
+        });
     });
 });
 
@@ -76,8 +79,11 @@ app.post("/create", function(req, res) {
     db.run(`
         INSERT INTO phones (brand, model, os, screensize, image)
         VALUES(?, ?, ?, ?, ?);
-    `, data, function(err, data) {
-        res.json({data: data, err: err});
+    `, data, function(err, d) {
+        res.json({
+            success: true,
+            message: 'Added phone'
+        });
     });
 });
 
