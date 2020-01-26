@@ -33,8 +33,8 @@ let db = my_database('./phones.db');
 //
 // First, create an express application `app`:
 
-var express = require("express");
-var app = express();
+let express = require("express");
+let app = express();
 
 // ###############################################################################
 // Routes
