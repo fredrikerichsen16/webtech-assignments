@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HEI</h1>
+</body>
+</html>
+
+<script>
+
+// UPDATE
+// var xhr = new XMLHttpRequest();
+// xhr.open("PATCH", "http://localhost:3000/update", true);
+// xhr.setRequestHeader('Content-Type', 'application/json');
+// xhr.send(JSON.stringify({
+//     'id': 1,
+//     'model': 'iPhone 10'
+// }));
+// xhr.onload = function() {
+//   console.log(this);
+//   console.log(this.responseText);
+// }
+
+// GET
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "http://localhost:3000/get", true);
+xhr.setRequestHeader('Content-Type', 'application/json');
+xhr.send();
+xhr.onload = function() {
+  console.log(this);
+  console.log(this.responseText);
+}
+
+// CREATE
+// var xhr = new XMLHttpRequest();
+// xhr.open("POST", "http://localhost:3000/create", true);
+// xhr.setRequestHeader('Content-Type', 'application/json');
+// xhr.send(JSON.stringify({
+//     'model': 'Galaxy S10',
+//     'brand': 'Samsung',
+//     'os': 'Android',
+//     'screensize': 7,
+//     'image': 'LINK',
+// }));
+// xhr.onload = function() {
+//   console.log(this);
+//   console.log(this.responseText);
+// }
+
+// DELETE
+// var xhr = new XMLHttpRequest();
+// xhr.open("DELETE", "http://localhost:3000/delete/3", true);
+// xhr.setRequestHeader('Content-Type', 'application/json');
+// xhr.send();
+// xhr.onload = function() {
+//   console.log(this);
+//   console.log(this.responseText);
+// }
+
+</script>
