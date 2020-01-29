@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assigment 4</title>
+
+    <link rel="stylesheet" type="text/css" href="ass4.css">
+</head>
+<body>
+
+  <h2>Accessibility and Usability</h2>
+
+   <p>Our page has decent usability with a simple, modern design and an easy to understand layout. It is responsive with satisfactory design for phone users. The accessibility is good apart from the fact that we forgot to include alt tags on images. The layout is such that it makes sense for screen readers. The input tags have a name tag that indicates their purpose. Each section has a header and the table is easy to understand with a screen reader.
+   </p>
+
+  <h2>WCAG guidelines most relevant to our page</h2>
+   <p>Guideline 1.1 is important because we have many images on our website that need an alt tag so that people with screen readers can perceive them.
+    An option for increasing text size without breaking the website design would also be good and useful for many people, but it’s difficult to implement.
+
+    Guideline 1.3 could be adhered to even better. For example the responsiveness of our website is not that good. And the structure could be better and make more sense to screen readers, but there’s a tradeoff between nice visual design and design for screen readers.
+  </p>
+
+  <h2>Improvement Plan</h2>
+   <ul>
+     <li>Add alt-tags to images describing the content of the image.</li>
+     <li>Remove the “submit form” part in the printed css as it’s not necessary.</li>
+     <li>Improve the responsiveness.</li>
+   </ul>
+
+   <h2>Principle 1: Perceivable - Information and user interface components must be presentable to users in ways they can perceive.</h2>
+   <h3>Guideline 1.1 - Text Alternatives: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols, or simpler language.</h3>
+    <p>Our website does not adhere to this guideline. To adhere to it we would have to add an alt tag to images with a description of the image.
+We could also add an option for large print. This is possible as a browser feature, but it would just increase the print size without designing the page around it, so the design would break.
+For inputs we have used names that describe its purpose, which is the recommended solution.</p>
+
+   <h3>Guideline 1.3 - Adaptable: Create content that can be presented in different ways (for example simpler layout) without losing information or structure.</h3>
+
+   <p>Regarding point 1.3.1, the only feature on our website where the structure, relationships, presentation etc. is important is the table. A table’s layout is easily programmatically determined so it is easy to perceive with e.g. a screen reader.
+Regarding point 1.3.2, the order in which content is presented from left to right corresponds to the order of content in html from top to bottom.
+For guideline 1.3 we meet the requirements for criteria level A.</p>
+
+<h3>Guideline 1.4 - Distinguishable: Make it easier for users to see and hear content including separating foreground from background.</h3>
+
+<p>Regarding point 1.4.1, we use color in the banner to separate the “Black Friday Sale” foreground and the blue background. But the background can be any color (we chose blue but can easily change it) and the text is semi-transparent white so it will just be a lighter shade of whichever color the background is. Thus, we don’t use any colors that can’t be distinguished by people with color blindness.
+Regarding point 1.4.2, we don’t use any audio on our website.
+For guideline 1.4 we meet the requirements for criteria level A.</p>
+
+<h2>Principle 2: Operable - User interface components and navigation must be operable</h2>
+<h3>Guideline 2.1 - Keyboard Accessible: Make all functionality available from a keyboard</h3>
+ <p>Almost no functionality is available from just a keyboard and no mouse, so we do not meet the criteria for level A for this guideline.</p>
+
+ <h3>Guideline 2.4 - Navigable: Provide ways to help users navigate, find content, and determine where they are</h3>
+
+ <ul>
+   <li>2.4.1: Not relevant to our website as we don’t have a bypass block.</li>
+   <li>2.4.2: We have titles for each section of the page</li>
+   <li>2.4.4: The purpose of all our links is obvious. E.g. the navigation bar links are obvious, the “See Deals” link is obvious and the links to different phone brands are obvious.</li>
+   <li>2.4.3: Our sections are in a nice reasonable order I think.</li>
+   <li>2.4.6: We have headings for each section and labels for some images.</li>
+   <li>2.4.8: We only have one page so this is not relevant.</li>
+   <li>2.4.9: All our link purposes are not that hard to deduce just by the text without context (location).</li>
+   <li>2.4.10: We use section headings.</li>
+ </ul>
+
+  <table>
+        <tr>
+          <th>Criteria</th>
+          <th>Ratings</th>
+          <th>Points</th>
+          <th>FeedBack Relation</th>
+        </tr>
+        <tr>
+          <td>HTML a: All items from Appendix 1</td>
+          <td>Comments
+No usage of p tag (-2)
+Wrong usage of pre tag (-2)
+Image input box could have been a url (-1)</td>
+          <td>20 / 25 pts</td>
+          <td>Negative Aspect: Wrong implementation of tags and misuse of input box</td>
+        </tr>
+        <tr>
+          <td>HTML b: Interactive form
+view longer description</td>
+          <td>Comments
+Perfect.</td>
+          <td>10 / 10 pts</td>
+          <td>Positive Aspect</td>
+        </tr>
+        <tr>
+          <td>HTML c: Validator check
+view longer description</td>
+          <td>Comments
+No errors.</td>
+          <td>5 / 5 pts</td>
+          <td>Positive Aspect</td>
+        </tr>
+        <tr>
+          <td>HTML d: Misc
+view longer description
+</td>
+          <td>Comments
+Readability is good, good usage of sections.
+However, links aren't linking to anything.
+</td>
+          <td>4 / 5 pts</td>
+          <td>Technical Iimplementation failure, links are missdirecting.</td>
+        </tr>
+        <tr>
+          <td>CSS a: All items from Appendix 2</td>
+          <td>border-width missing (-1)
+            text-transform missing (-1)
+            font-style missing (-1)
+            font shorthand missing (-1)
+            list-style shorthand missing (-1)
+            orphans and widows have no usage here (-2)
+            :link missing (-1)
+          </td>
+          <td>12 / 20 pts</td>
+          <td>Negative Aspect: Css not correctly styled, makes the webpage a bit weird and unresponsive.</td>
+        </tr>
+        <tr>
+          <td>CSS b: print style</td>
+          <td>Print style was not linked to HTML. First page only contains the words "Black Friday Sale", second page still contains the form to add phones which has no purpose on paper.
+          </td>
+          <td>2 / 5 pts</td>
+          <td>Negative Aspect: wrong CSS handeling leads to display eerrors.</td>
+        </tr>
+        <tr>
+          <td>CSS c: screen style</td>
+          <td>Looks good on screen media, however print CSS is almost equivalent to that of the normal CSS style.</td>
+          <td>2 / 5 pts</td>
+          <td>Technical implementation/ negative aspect: CSS and print styles are almost matching.</td>
+        </tr>
+        <tr>
+          <td>CSS d: Responsive design</td>
+          <td>The design is not responsive enough. When making the size equal to that of a phone, text doesn't fit on the screen horizontally. Buttons and inputs aren't made bigger for phone use.
+          </td>
+          <td>6 / 10 pts</td>
+          <td>Negative Aspect: Responsiveness is off, can't really use in a cell phone.</td>
+        </tr>
+        <tr>
+          <td>CSS e: browser compatibility report</td>
+          <td>Present, with a few differences.</td>
+          <td>5 / 5 pts</td>
+          <td>Positive Aspect</td>
+        </tr>
+        <tr>
+          <td>CSS f: Misc</td>
+          <td>Very clear CSS, organized and with clear comments.However, you set CSS attributes again in the print style for no reason.
+          </td>
+          <td>4 / 5 pts</td>
+          <td>Technical implementation: Forgot ro remove some CSSa tributes on the print page</td>
+        </tr>
+        <tr>
+          <td>CSS g: validator check</td>
+          <td>No error</td>
+          <td>5/ 5 pts</td>
+          <td>Positive Aspect</td>
+        </tr>
+      </table>
+
+      <table>
+     <tr>
+       <th>Criteria</th>
+       <th>Ratings</th>
+       <th>Points</th>
+       <th>Feedback Relation</th>
+     </tr>
+     <tr>
+       <td>Sortable tables</td>
+       <td>Sorting works.</td>
+       <td>20 / 20 pts</td>
+       <td>Positive Aspect</td>
+     </tr>
+     <tr>
+       <td>Reset button</td>
+       <td>Perfect.</td>
+       <td>15 / 15 pts</td>
+       <td>Positive Aspect</td>
+     </tr>
+     <tr>
+       <td>Dynamic table</td>
+       <td>Table is not filled on logical event (should be onload or something similar).</td>
+       <td>45 / 55 pts</td>
+       <td>Negative aspect, wrong implementation. </td>
+     </tr>
+     <tr>
+       <td>Misc.</td>
+       <td>Sorting numbers doesn't work.
+         Nice separation of code (e.g. addRow). Some comments would be nice. Readability OK, indentation OK, filename OK.
+         Very clear separation of JS and HTML.
+       </td>
+       <td>10 / 10 pts</td>
+       <td>Positive  Aspect</td>
+     </tr>
+   </table>
+
+</body>
+</html>
