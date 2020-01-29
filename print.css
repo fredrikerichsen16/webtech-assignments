@@ -159,32 +159,9 @@ section#top_products td:nth-of-type(2) {
     font-weight: bold;
 }
 
-section#top_products tfoot input[type="text"]:focus,
-section#top_products tfoot input[type="number"]:focus {
-    border-color: rgba(0, 166, 255, 1);
-    border-style: solid;
-    outline: 0;
+section#top_products tfoot {
+    display: none;
 }
-
-section#top_products tfoot button {
-    padding: 12px 25px;
-    background-color: rgba(0, 166, 255, 1);
-    color: white;
-    font-size: 16px;
-    border-radius: 8px;
-    border: 0;
-    font-variant: small-caps;
-}
-
-    section#top_products tfoot button:hover {
-        cursor: pointer;
-        background-color: rgba(0, 159, 245, 1);
-    }
-
-    section#top_products tfoot button:active {
-        border: 2px solid rgba(0, 159, 245, 1);
-        border-left: 0; border-top: 0;
-    }
 
 /* TOP PRODUCTS END */
 
